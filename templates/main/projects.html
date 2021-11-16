@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% load static %} 
+
+{% block mycss %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}" />
+{% endblock %} 
+
+{% block title %} Vishal | Projects{% endblock %}
+
+{% block content %}
+<h3 class="tag">Personal Projects</h3>
+<div class="container">
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-sm-3">
+      <a
+        href="{{project.github_link}}"
+        style="color: black; text-decoration: none"
+      >
+        <div class="card" style="width: 18rem">
+          <img src="{{project.image.url}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{project.project_name}}</h5>
+            <p class="card-text">{{project.description}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{project.techstack}}</li>
+          </ul>
+        </div>
+      </a>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

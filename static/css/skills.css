@@ -1,0 +1,15 @@
+.tag{
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.icon{
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 25px;
+}

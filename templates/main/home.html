@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mycss %} 
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block title %} Vishal Parmar{% endblock %}
+
+{% block content %}
+    
+        
+        <div class="container" style="text-align: center;">
+            <img src="{{profile.pic.url}}" class="img-fluid pic" alt="...">
+        </div>
+
+
+        <div class="card" style="text-align: center; border: none;">
+            <div class="card-body">
+              <h1 class="name">Vishal Parmar</h1>
+              <p class="description">{{profile.role}}</p>
+    
+            </div>
+          </div>
+    
+          <div class="card" style="text-align: center; border: none;">
+            <div class="card-body">
+                <a href="https://github.com/pvrvishal"><img src="{% static 'images/githubicon.png' %}" alt="" class="icon"></a>
+                <a href="https://www.linkedin.com/in/vishal-parmar-4244281b2/"><img src="{% static 'images/linkedinicon2.jpg' %}" alt="" class="icon"></a>
+                <a href="https://twitter.com/vishal___parmar"><img src="{% static 'images/twittericon.png' %}" alt="" class="icon"></a>
+            </div>
+          </div>
+    
+          <div class="card" style="text-align: center; border: none;">
+            <div class="card-body">
+              <h4 style="font-size: 30px; text-decoration: underline;">About Me</h4><br>
+                <p class="aboutme">{{profile.aboutme}}  </p>
+            </div>
+          </div>
+    
+          <div class="card" style="text-align: center; border: none;">
+            <div class="card-body">
+              <p>Copyright &copy; 2021 Vishal Parmar</p>
+            </div>
+          </div>
+          
+{% endblock %}
+        

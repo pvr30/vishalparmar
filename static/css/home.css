@@ -1,0 +1,33 @@
+.pic{
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.name{
+  font-size: 50px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+.description{
+  font-size: 25px;
+  font-weight: 500;
+}
+.links{
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 400px;
+  left: 795px;
+}
+.icon{
+  width: 65px;
+  height: 65px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.aboutme{
+  
+  font-weight: bolder;
+  font-style: italic;
+}

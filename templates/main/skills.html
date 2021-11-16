@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mycss %}
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock %}
+
+{% block title %} Vishal | Skills{% endblock %}
+
+{% block content %}
+    <h3 class="tag">Skills</h3>
+    {% for skill in skills %}
+    <div class="container" style="padding: 15px;">
+        <div class="row row-cols-auto">
+          <img src="{{skill.logo.url}}" alt="" class="icon">
+          <p class="name">{{skill.name}}</p>
+        </div>
+      </div>
+    {% endfor %}
+{% endblock %}
+        
